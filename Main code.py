@@ -44,7 +44,7 @@ texte_2 = police.render ("Press 'm' to mute", True, (WHITE))
 
 #Général loop
 while running:
-    clock.tick(10)
+    clock.tick(60)
     #En cas d'un événement de pygame
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
@@ -186,7 +186,7 @@ while running:
 
             #"Main loop" (partie ou le jeux se déroule)
             while running:
-                clock.tick(10)
+                clock.tick(60)
                 for event in pygame.event.get():
                     if event.type==pygame.QUIT:
                         running=False
